@@ -31,32 +31,65 @@ namespace MultiDimensionalArrays
             //    Console.WriteLine();
             //}
             #endregion
-            
-            
-            int[,] arrayMulti = new int[2, 2];
+
+
+            //int[,] arrayMulti = new int[2, 2];
 
             #region entering values via consolereadline
-            for (int i = 0; i < 2; i++)
-            {
-                for (int j = 0; j < 2; j++)
-                {
-                    Console.WriteLine($"Enter element into position {i} {j}");
-                    arrayMulti[i, j] = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    for (int j = 0; j < 2; j++)
+            //    {
+            //        Console.WriteLine($"Enter element into position {i} {j}");
+            //        arrayMulti[i, j] = int.Parse(Console.ReadLine());
 
-                }
-            }
+            //    }
+            //}
 
-            Console.WriteLine("You entered the following values");
+            //Console.WriteLine("You entered the following values");
 
-            for (int i = 0; i < 2; i++)
-            {
-                for (int j = 0; j < 2; j++)
-                {
-                    Console.WriteLine(arrayMulti[i,j] + "\t");
-                }
-                Console.WriteLine();
-            }
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    for (int j = 0; j < 2; j++)
+            //    {
+            //        Console.WriteLine(arrayMulti[i,j] + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
             #endregion
+
+            #region init second way
+            //int[,] arrayMulti = new int[,] { { 5, 9 }, { 8, 6 } };
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    for (int j = 0; j < 2; j++)
+            //    {
+            //        Console.WriteLine(arrayMulti[i, j] + "\t");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            #endregion
+
+            #region Three dimensions
+            //int[,,] data = new int[2, 2, 2] { { { 2, 3 }, { 9, 8 } }, { { 7, 3 }, { 1, 5 } } };
+
+            //for (int i = 0; i < data.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < data.GetLength(1); j++)
+            //    {
+            //        for (int k = 0; k < data.GetLength(2); k++)
+            //        {
+            //            Console.Write(data[i,j,k] + "\t");
+            //        }
+            //        Console.WriteLine();
+            //    }
+            //}
+            
+
+            #endregion
+
+
         }
     }
 }
